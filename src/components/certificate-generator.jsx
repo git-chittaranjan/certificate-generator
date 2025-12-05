@@ -136,8 +136,8 @@ const CertificateGenerator = () => {
 
                 <button
                     onClick={modifyPdf}
-                    className="px-6 py-3 rounded-xl font-medium bg-blue-600 text-white shadow-md 
-                       transition hover:bg-blue-700 hover:shadow-lg active:scale-95"
+                    className="px-6 py-3 rounded-xl font-medium bg-blue-500 text-white shadow-md 
+                       transition hover:bg-blue-800 hover:shadow-lg active:scale-95"
                 >
                     Download Certificate
                 </button>

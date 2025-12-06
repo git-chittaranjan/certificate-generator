@@ -127,22 +127,22 @@ const CertificateGenerator = () => {
     /*====================== End of PDF Generator Function ======================*/
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-black p-4">
-            <div className="w-full max-w-md bg-gray-900 rounded-2xl shadow-2xl p-8 text-center space-y-6">
-
-                <h1 className="text-2xl font-semibold text-white">
+        <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-black via-zinc-900 to-black">
+            <div className="w-full max-w-lg bg-gray-900/90 p-8 sm:py-16 text-center space-y-12 border border-gray-800 backdrop-blur-xl rounded-3xl 
+                            shadow-[0_0_45px_rgba(255,170,0,0.15)] transition-all duration-300 hover:shadow-[0_0_65px_rgba(255,170,0,0.25)]">
+                <h1 className="text-3xl font-bold text-white tracking-wide drop-shadow-sm">
                     Click to Generate Certificate
                 </h1>
 
                 <button
                     onClick={modifyPdf}
-                    className="px-6 py-3 rounded-xl font-medium bg-blue-500 text-white shadow-md 
-                       transition hover:bg-blue-800 hover:shadow-lg active:scale-95"
+                    className="w-full px-6 py-4 rounded-xl font-semibold bg-linear-to-r from-amber-500 to-orange-600 text-white shadow-lg shadow-orange-900/40 hover:shadow-orange-600/50 hover:scale-[1.03] active:scale-95 transition-all duration-300"
                 >
                     Download Certificate
                 </button>
             </div>
         </div>
+
     );
 };
 

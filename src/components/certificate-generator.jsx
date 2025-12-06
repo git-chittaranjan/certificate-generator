@@ -38,7 +38,7 @@ const CertificateGenerator = () => {
         const QRCodeImageBytes = await fetch(QRCodeUrl).then(res => res.arrayBuffer())
 
         const QRCodeImage = await pdfDoc.embedPng(QRCodeImageBytes)
-        const QRCodeImageDims = QRCodeImage.scale(.15)
+        const QRCodeImageDims = QRCodeImage.scale(.09)
 
         firstPage.drawImage(QRCodeImage, {
             x: pageWidth * 0.775,
